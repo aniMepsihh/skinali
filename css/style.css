@@ -7,6 +7,22 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
 @font-face {
   font-family: "Proxima Nova Semibold";
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -21,29 +37,6 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  font-family: "Proxima Nova Light", sans-serif;
-  color: #262626;
-}
-
-.button-o {
-  border: 2px solid #507fe1;
-  text-transform: uppercase;
-  padding: 17px 22px;
-  font-size: 12px;
-  font-family: "Proxima Nova Semibold", sans-serif;
-  color: #507fe1;
-}
-
-.button {
-  padding: 25px 45px;
-  text-transform: uppercase;
-  border: none;
-  background-color: #507fe1;
-  color: #ffffff;
-  font-family: "Proxima Nova Semibold", sans-serif;
-}
-
 .navbar {
   position: fixed;
   left: 0;
@@ -55,7 +48,6 @@ body {
 .navbar-wrap {
   display: flex;
   align-items: center;
-  min-height: 80px;
   justify-content: space-between;
 }
 .navbar__mobile, .navbar__landline {
@@ -86,7 +78,7 @@ body {
   width: 100%;
   background-color: #507fe1;
   transition: 0.2s;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
 }
 .menu_active {
   transform: translateY(0);
@@ -136,6 +128,56 @@ body {
   color: #7b7b79;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu__nav {
+    flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 20px;
+  }
+}
+body {
+  font-family: "Proxima Nova Light", sans-serif;
+  color: #262626;
+}
+
+.button-o {
+  border: 2px solid #507fe1;
+  text-transform: uppercase;
+  padding: 17px 22px;
+  font-size: 12px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  color: #507fe1;
+}
+
+.button {
+  padding: 25px 45px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 10px;
+  }
+}
 .hero {
   background: #f1f1f1 url("../img/hero.jpg") no-repeat center top 80px;
   background-size: contain;
@@ -151,4 +193,10 @@ body {
   font-size: 30px;
   font-family: "Proxima Nova Semibold", sans-serif;
   display: block;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
