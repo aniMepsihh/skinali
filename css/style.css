@@ -555,4 +555,51 @@ input[type=checkbox]:checked + label:before {
   .price-block__card {
     margin: 20px;
   }
+}
+.step {
+  text-align: center;
+  position: relative;
+}
+.step:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: rgba(126, 123, 120, 0.8);
+  top: 25%;
+  right: -63%;
+  position: absolute;
+}
+.step:last-child:before {
+  display: none;
+}
+.step__text {
+  max-width: 160px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.step__title {
+  font-size: 18px;
+}
+.steps {
+  background-color: #f1f1f1;
+}
+.steps-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .step {
+    flex-basis: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .step {
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
