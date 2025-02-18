@@ -162,7 +162,7 @@ img {
 }
 
 .section {
-  margin: 100px 0;
+  padding: 100px 0;
 }
 .section-title {
   text-transform: uppercase;
@@ -170,10 +170,6 @@ img {
   font-size: 30px;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
-.section__title {
-  margin-bottom: 100px;
-}
-
 .button-o {
   border: 2px solid #507fe1;
   text-transform: uppercase;
@@ -363,7 +359,7 @@ input[type=checkbox]:checked + label:before {
 .features-block__item {
   flex-basis: 33%;
   text-align: center;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 .features-block__text {
   font-size: 14px;
@@ -377,7 +373,7 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 768px) {
   .features-block__item {
     flex-basis: 100%;
-    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
 .catalog {
@@ -387,6 +383,7 @@ input[type=checkbox]:checked + label:before {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 100px;
 }
 .catalog-card {
   max-width: 570px;
