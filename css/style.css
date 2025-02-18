@@ -624,12 +624,16 @@ input[type=checkbox]:checked + label:before {
 .reviews-slider__text {
   font-size: 15px;
   font-style: italic;
-  max-width: 370px;
+  width: 370px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
 }
 .reviews-slider__text:after {
   content: "";
