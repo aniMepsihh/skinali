@@ -38,6 +38,7 @@
     transform: translateY(-200%)
     opacity: 0
     &_active
+        z-index: 99
         transform: translateY(0)
         opacity: 1
     &__nav
@@ -59,8 +60,11 @@
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: center
-
+        justify-content: center        
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
         &__line
             display: block
             width: 20px
